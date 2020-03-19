@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/et"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"/>
+    </LinearLayout>
+    <com.bawei.zhaochenyu1709a.util.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
